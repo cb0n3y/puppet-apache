@@ -5,7 +5,7 @@
 # @example
 #   include apache
 class apache (
-  String     $web
+  String     $web,
 ) {
   include apache::install
 }
