@@ -5,7 +5,10 @@
 # @example
 #   include apache::config
 class apache::config {
-  file { '': 
-  
+  file { $apache::config_path: 
+    ensure  => present,
+    user    => 'root',
+    group   => 'root',
+    mode    => '0644',
   }
 }
