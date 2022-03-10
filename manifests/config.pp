@@ -5,8 +5,8 @@
 # @example
 #   include apache::config
 class apache::config {
-  $apache::config_paths.each |Array[String] $config_path| {
-    file { $apache::config_path: 
+  $apache::config_paths.each |String $config_path| {
+    file { $config_path: 
       ensure  => directory,
     }
   }
