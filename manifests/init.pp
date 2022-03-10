@@ -5,8 +5,8 @@
 # @example
 #   include apache
 class apache (
-  String     $install_name,
-  String     $config_path
+  String           $install_name,
+  Array[String]    $config_path,
 ) {
   contain apache::install
   contain apache::config
