@@ -1,0 +1,3 @@
+<%  | String $server_name
+      String $doc_path
+| -%>
