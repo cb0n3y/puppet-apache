@@ -4,5 +4,13 @@
 #
 # @example
 #   include apache::dissite
-class apache::dissite {
+class apache::dissite (
+  String  $vhost_file = '000-default.conf'
+) {
+  if $facts['os']['family'] == 'Debian' {
+    exec { "a2dissite ${vhost_file}": 
+      onlyif => "test -f /etc/apache2/sites-available/${vhost_file}",
+      path   => $facts['path']
+    }
+  }
 }
