@@ -1,0 +1,10 @@
+<%  |  String $server_name
+| -%>
+<html>
+    <head>
+        <title><%= $server_name %></title>
+    </head>
+    <body>
+        <p>Welcome to <%= $server_name %>
+    </body>
+</html>

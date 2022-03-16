@@ -1,4 +1,4 @@
-<%  | String $server_name
+<%  | String $server_name,
       String $document_root
 | -%>
 <VirtualHost *:80>

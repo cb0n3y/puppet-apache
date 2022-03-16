@@ -1,1 +1,4 @@
---- {}
+---
+apache::server_name: 'globomantics.loc'
+apache::doc_path: '/var/www/html'
+
